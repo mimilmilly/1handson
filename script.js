@@ -8,7 +8,7 @@ loginButton.addEventListener("click", function(e) {
   e.preventDefault();
 
   const emailValue = emailInput.value.trim();
-  const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!emailPattern.test(emailValue)) {
     emailError.style.display = "block";
