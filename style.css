@@ -59,19 +59,20 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
-    transform: translateY(0); /* ตำแหน่งเริ่มต้น */
+    transform: translateY(0);
   }
   
   button[type="submit"]:hover {
     background: linear-gradient(90deg, #303f9f, #7b1fa2);
-    transform: translateY(10px); /* เลื่อนลง 10px */
+    transform: translateY(10px);
   }
 
   .error-text {
-  color: red;
-  font-size: 13px;
-  margin-bottom: 10px;
-  display: none;
+      color: red;
+      font-size: 13px;
+      margin-bottom: 10px;
+      visibility: hidden; 
+      height: 0;
 }
   
   
