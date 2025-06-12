@@ -51,7 +51,20 @@ body {
     transition: background 0.3s;
   }
   
+  button[type="submit"] {
+    background: linear-gradient(90deg, #3f51b5, #9c27b0);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    transform: translateY(0); /* ตำแหน่งเริ่มต้น */
+  }
+  
   button[type="submit"]:hover {
     background: linear-gradient(90deg, #303f9f, #7b1fa2);
+    transform: translateY(10px); /* เลื่อนลง 10px */
   }
+  
   
