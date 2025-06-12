@@ -7,12 +7,12 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-  if (!emailRegex.test(email)) {
-    emailError.style.display = "block"; 
-    return;
-  } else {
-    emailError.style.display = "none";
-  }
+if (!emailRegex.test(email)) {
+  emailError.style.visibility = "visible";
+  return;
+} else {
+  emailError.style.visibility = "hidden";
+}
 
   if (password === "") {
     alert("Please enter your password.");
